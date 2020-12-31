@@ -1,1 +1,0 @@
-# hedgedoc-test

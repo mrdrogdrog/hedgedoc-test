@@ -1,0 +1,9 @@
+User-agent: *
+
+
+
+
+Disallow: /hedgedoc-test/privacy-policy/
+
+Disallow: /hedgedoc-test/team/
+
