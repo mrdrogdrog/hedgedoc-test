@@ -13,14 +13,14 @@
         <meta name="author" content="HedgeDoc Developers">
       
       
-        <link rel="canonical" href="https://mrdrogdrog.github.io/hedgedoc-test/history/">
+        <link rel="canonical" href="https://mrdrogdrog.github.io/hedgedoc-test/url-scheme/">
       
       <link rel="shortcut icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>History of HedgeDoc - HedgeDoc</title>
+        <title>URL scheme - HedgeDoc</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#history-of-hedgedoc" class="md-skip">
+        <a href="#url-scheme" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              History of HedgeDoc
+              URL scheme
             
           </span>
         </div>
@@ -855,50 +855,106 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hedgedoc/hedgedoc/edit/master/docs/history.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/hedgedoc/hedgedoc/edit/master/docs/url-scheme.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="history-of-hedgedoc">History of HedgeDoc<a class="headerlink" href="#history-of-hedgedoc" title="Permanent link">&para;</a></h1>
-<h2 id="it-started-with-hackmd">It started with HackMD<a class="headerlink" href="#it-started-with-hackmd" title="Permanent link">&para;</a></h2>
-<p>HackMD is the origin of this project, which was mostly developed by Max Wu and
-Yukai Huang. Originally, this was open source under MIT license, but was
-<a href="https://github.com/hackmdio/codimd/pull/578">relicensed in October 2017 to be AGPLv3</a>.
-At the same time, <a href="https://hackmd.io">hackmd.io</a> was founded to offer a
-commercial version of HackMD.</p>
-<p>The AGPLv3-version was developed and released by the community, this was for a
-while referred to as "HackMD community edition".</p>
-<p><em>For more on the splitting of the projects, please refer to <a href="https://hackmd.io/c/community-news/https%3A%2F%2Fhackmd.io%2Fs%2Fr1_4j9_hZ">A note to our community (2017-10-11)</a>.</em></p>
-<h2 id="hackmd-ce-became-codimd">HackMD CE became CodiMD<a class="headerlink" href="#hackmd-ce-became-codimd" title="Permanent link">&para;</a></h2>
-<p>In June 2018, CodiMD was renamed from its former name "HackMD" and continued to
-be developed under AGPLv3 by the community. We decided to change the name to
-break the confusion between HackMD (enterprise offering) and CodiMD (community
-project), as people mistook it for an open core development model.</p>
-<p><em>For the whole renaming story, see the <a href="https://github.com/hackmdio/hackmd/issues/720">issue where the renaming was discussed</a>.</em></p>
-<h2 id="codimd-went-independent">CodiMD went independent<a class="headerlink" href="#codimd-went-independent" title="Permanent link">&para;</a></h2>
-<p>In March 2019, a discussion over licensing, governance and the future of CodiMD
-lead to the formation of a distinct GitHub organization. Up to that point, the
-community project resided in the organization of hackmdio but was for the most
-part self-organized.</p>
-<p>During that debate, we did not reach an agreement that would have allowed us to
-move the repository, so we simply forked it. We still welcome the HackMD team
-as part of our community, especially since a large portion of this code base
-originated with them.</p>
-<p><em>For the debate that lead to this step, please refer to the <a href="https://github.com/hackmdio/hackmd/issues/1170">governance debate</a> and <a href="https://github.com/hedgedoc/hedgedoc/issues/10">the announcement of the new repository</a>.</em></p>
-<h2 id="codimd-became-hedgedoc">CodiMD became HedgeDoc<a class="headerlink" href="#codimd-became-hedgedoc" title="Permanent link">&para;</a></h2>
-<p>With two actively named forks sharing the same name, both <a href="https://github.com/hackmdio/codimd/issues/1219">insisting on being
-the original/actual owner of the name CodiMD</a>,
-people became rightfully confused about the projects sharing the same name.</p>
-<p>After roughly a year of being stuck on the name issue, the HedgeDoc community
-decided to take action and started a <a href="https://community.codimd.org/t/renaming-yet-another-time/102">renaming process in April 2020</a>.
-With a good head start in the amount of names, it was decided that an entire
-rebranding should take place and therefore, after a <a href="https://community.codimd.org/t/codimd-becomes-hedgedoc/170">name was agreed on in July
-2020</a>, the next step
-was to <a href="https://community.codimd.org/t/time-to-find-the-hedgedoc-logo/171">find a logo</a>.</p>
-<p>In November of 2020, roughly 7 months after the initiative was started, a logo was
-found, the rebranding of the application as well as all community pages took place
-and the time of name conflicts was over. (hopefully.)</p>
+                <h1 id="url-scheme">URL scheme<a class="headerlink" href="#url-scheme" title="Permanent link">&para;</a></h1>
+<p>HedgeDoc has three different modes for viewing a stored note. Each mode has a slightly different URL for accessing it. This document gives an overview about these URLs.<br />
+We assume that you replace <code>pad.example.com</code> with the domain of your instance.</p>
+<h2 id="default-random">Default (random)<a class="headerlink" href="#default-random" title="Permanent link">&para;</a></h2>
+<p>When you create a new note by clicking the "New note" button, your note is given a long random id and a random short-id. The long id is needed for accessing the editor and the live-update view. The short-id is used for the "published" version of a note that is read-only and does not update in realtime as well as for the presentation mode.</p>
+<table>
+<thead>
+<tr>
+<th>example URL</th>
+<th>prefix</th>
+<th>mode</th>
+<th>content updates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pad.example.com/Ndmv3oCyREKZMjSGR9uhnQ</td>
+<td><em>none</em></td>
+<td>editor</td>
+<td>in realtime</td>
+</tr>
+<tr>
+<td>pad.example.com/s/ByXF7k-YI</td>
+<td>s/</td>
+<td>read-only version</td>
+<td>on reload</td>
+</tr>
+<tr>
+<td>pad.example.com/p/ByXF7k-YI</td>
+<td>p/</td>
+<td>presentation mode</td>
+<td>on reload</td>
+</tr>
+</tbody>
+</table>
+<h2 id="freeurl-mode">FreeURL mode<a class="headerlink" href="#freeurl-mode" title="Permanent link">&para;</a></h2>
+<p>If the setting <code>CMD_ALLOW_FREEURL</code> is enabled, users may create notes with a custom alias URL by just visiting the editor version of a custom alias. The published version and the presentation mode may also be accessed with the custom alias.</p>
+<table>
+<thead>
+<tr>
+<th>example URL</th>
+<th>prefix</th>
+<th>mode</th>
+<th>content updates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pad.example.com/my-awesome-note</td>
+<td><em>none</em></td>
+<td>editor</td>
+<td>in realtime</td>
+</tr>
+<tr>
+<td>pad.example.com/s/my-awesome-note</td>
+<td>s/</td>
+<td>read-only version</td>
+<td>on reload</td>
+</tr>
+<tr>
+<td>pad.example.com/p/my-awesome-note</td>
+<td>p/</td>
+<td>presentation mode</td>
+<td>on reload</td>
+</tr>
+</tbody>
+</table>
+<h2 id="different-editor-modes">Different editor modes<a class="headerlink" href="#different-editor-modes" title="Permanent link">&para;</a></h2>
+<p>The editor has three different sub-modes. All of these update the content in realtime.</p>
+<table>
+<thead>
+<tr>
+<th>example URL</th>
+<th>icon in the navbar</th>
+<th>behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pad.example.com/longnoteid?edit</td>
+<td>pencil</td>
+<td>Full-screen markdown editor for the content</td>
+</tr>
+<tr>
+<td>pad.example.com/longnoteid?view</td>
+<td>eye</td>
+<td>Full-screen view of the note without the editor</td>
+</tr>
+<tr>
+<td>pad.example.com/longnoteid?both</td>
+<td>columns</td>
+<td>markdown editor and view mode side-by-side</td>
+</tr>
+</tbody>
+</table>
                 
               
               

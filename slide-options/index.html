@@ -13,14 +13,14 @@
         <meta name="author" content="HedgeDoc Developers">
       
       
-        <link rel="canonical" href="https://mrdrogdrog.github.io/hedgedoc-test/history/">
+        <link rel="canonical" href="https://mrdrogdrog.github.io/hedgedoc-test/slide-options/">
       
       <link rel="shortcut icon" href="../images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>History of HedgeDoc - HedgeDoc</title>
+        <title>Slide Separators - HedgeDoc</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#history-of-hedgedoc" class="md-skip">
+        <a href="#slide-separators" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              History of HedgeDoc
+              Slide Separators
             
           </span>
         </div>
@@ -855,50 +855,158 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hedgedoc/hedgedoc/edit/master/docs/history.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/hedgedoc/hedgedoc/edit/master/docs/slide-options.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="history-of-hedgedoc">History of HedgeDoc<a class="headerlink" href="#history-of-hedgedoc" title="Permanent link">&para;</a></h1>
-<h2 id="it-started-with-hackmd">It started with HackMD<a class="headerlink" href="#it-started-with-hackmd" title="Permanent link">&para;</a></h2>
-<p>HackMD is the origin of this project, which was mostly developed by Max Wu and
-Yukai Huang. Originally, this was open source under MIT license, but was
-<a href="https://github.com/hackmdio/codimd/pull/578">relicensed in October 2017 to be AGPLv3</a>.
-At the same time, <a href="https://hackmd.io">hackmd.io</a> was founded to offer a
-commercial version of HackMD.</p>
-<p>The AGPLv3-version was developed and released by the community, this was for a
-while referred to as "HackMD community edition".</p>
-<p><em>For more on the splitting of the projects, please refer to <a href="https://hackmd.io/c/community-news/https%3A%2F%2Fhackmd.io%2Fs%2Fr1_4j9_hZ">A note to our community (2017-10-11)</a>.</em></p>
-<h2 id="hackmd-ce-became-codimd">HackMD CE became CodiMD<a class="headerlink" href="#hackmd-ce-became-codimd" title="Permanent link">&para;</a></h2>
-<p>In June 2018, CodiMD was renamed from its former name "HackMD" and continued to
-be developed under AGPLv3 by the community. We decided to change the name to
-break the confusion between HackMD (enterprise offering) and CodiMD (community
-project), as people mistook it for an open core development model.</p>
-<p><em>For the whole renaming story, see the <a href="https://github.com/hackmdio/hackmd/issues/720">issue where the renaming was discussed</a>.</em></p>
-<h2 id="codimd-went-independent">CodiMD went independent<a class="headerlink" href="#codimd-went-independent" title="Permanent link">&para;</a></h2>
-<p>In March 2019, a discussion over licensing, governance and the future of CodiMD
-lead to the formation of a distinct GitHub organization. Up to that point, the
-community project resided in the organization of hackmdio but was for the most
-part self-organized.</p>
-<p>During that debate, we did not reach an agreement that would have allowed us to
-move the repository, so we simply forked it. We still welcome the HackMD team
-as part of our community, especially since a large portion of this code base
-originated with them.</p>
-<p><em>For the debate that lead to this step, please refer to the <a href="https://github.com/hackmdio/hackmd/issues/1170">governance debate</a> and <a href="https://github.com/hedgedoc/hedgedoc/issues/10">the announcement of the new repository</a>.</em></p>
-<h2 id="codimd-became-hedgedoc">CodiMD became HedgeDoc<a class="headerlink" href="#codimd-became-hedgedoc" title="Permanent link">&para;</a></h2>
-<p>With two actively named forks sharing the same name, both <a href="https://github.com/hackmdio/codimd/issues/1219">insisting on being
-the original/actual owner of the name CodiMD</a>,
-people became rightfully confused about the projects sharing the same name.</p>
-<p>After roughly a year of being stuck on the name issue, the HedgeDoc community
-decided to take action and started a <a href="https://community.codimd.org/t/renaming-yet-another-time/102">renaming process in April 2020</a>.
-With a good head start in the amount of names, it was decided that an entire
-rebranding should take place and therefore, after a <a href="https://community.codimd.org/t/codimd-becomes-hedgedoc/170">name was agreed on in July
-2020</a>, the next step
-was to <a href="https://community.codimd.org/t/time-to-find-the-hedgedoc-logo/171">find a logo</a>.</p>
-<p>In November of 2020, roughly 7 months after the initiative was started, a logo was
-found, the rebranding of the application as well as all community pages took place
-and the time of name conflicts was over. (hopefully.)</p>
+                <h1 id="slide-separators">Slide Separators<a class="headerlink" href="#slide-separators" title="Permanent link">&para;</a></h1>
+<p>If you're getting started with reveal.js slides, there are a few things you need to know.</p>
+<p>There are two types of slides, those that transition horizontally and those that transition vertically (subslides).</p>
+<p>The following separators are used for each in the HedgeDoc syntax:</p>
+<pre><code class="language-markdown"># First Slide
+
+---
+
+# Next slide
+
+----
+
+## Subslide
+</code></pre>
+<p>as you can see, horizontal transitions are separated by <code>---</code> and vertical transitions by <code>----</code></p>
+<h2 id="basic-yaml-header">Basic YAML header<a class="headerlink" href="#basic-yaml-header" title="Permanent link">&para;</a></h2>
+<p>It's possible to customise the slide options using the YAML header in the slide markdown.</p>
+<p>eg:</p>
+<pre><code class="language-yaml">---
+title: Example Slide
+tags: presentation
+slideOptions:
+  theme: solarized
+  transition: 'fade'
+  # parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'
+---
+</code></pre>
+<p>make sure to have two spaces only at the start of the listed slide options.</p>
+<p>you can comment out options with a <code>#</code></p>
+<h3 id="some-other-options">Some other options<a class="headerlink" href="#some-other-options" title="Permanent link">&para;</a></h3>
+<pre><code class="language-markdown"># Display controls in the bottom right corner
+controls: true
+
+# Display a presentation progress bar
+progress: true
+
+# Set default timing of 2 minutes per slide
+defaultTiming: 120
+
+# Display the page number of the current slide
+slideNumber: false
+
+# Push each slide change to the browser history
+history: false
+
+# Enable keyboard shortcuts for navigation
+keyboard: true
+
+# Enable the slide overview mode
+overview: true
+
+# Vertical centering of slides
+center: true
+
+# Enables touch navigation on devices with touch input
+touch: true
+
+# Loop the presentation
+loop: false
+
+# Change the presentation direction to be RTL
+rtl: false
+
+# Randomizes the order of slides each time the presentation loads
+shuffle: false
+
+# Turns fragments on and off globally
+fragments: true
+
+# Flags if the presentation is running in an embedded mode,
+# i.e. contained within a limited portion of the screen
+embedded: false
+
+# Flags if we should show a help overlay when the questionmark
+# key is pressed
+help: true
+
+# Flags if speaker notes should be visible to all viewers
+showNotes: false
+
+# Global override for autolaying embedded media (video/audio/iframe)
+# - null: Media will only autoplay if data-autoplay is present
+# - true: All media will autoplay, regardless of individual setting
+# - false: No media will autoplay, regardless of individual setting
+autoPlayMedia: null
+
+# Number of milliseconds between automatically proceeding to the
+# next slide, disabled when set to 0, this value can be overwritten
+# by using a data-autoslide attribute on your slides
+autoSlide: 0
+
+# Stop auto-sliding after user input
+autoSlideStoppable: true
+
+# Use this method for navigation when auto-sliding
+autoSlideMethod: Reveal.navigateNext
+
+# Enable slide navigation via mouse wheel
+mouseWheel: false
+
+# Hides the address bar on mobile devices
+hideAddressBar: true
+
+# Opens links in an iframe preview overlay
+previewLinks: false
+
+# Transition style
+transition: 'slide' 
+# none/fade/slide/convex/concave/zoom
+
+# Transition speed
+transitionSpeed: 'default'
+# default/fast/slow
+
+# Transition style for full page slide backgrounds
+backgroundTransition: 'fade'
+# none/fade/slide/convex/concave/zoom
+
+# Number of slides away from the current that are visible
+viewDistance: 3
+
+# Parallax background image
+parallaxBackgroundImage: ''
+# e.g. &quot;'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'&quot;
+
+# Parallax background size
+parallaxBackgroundSize: ''
+# CSS syntax, e.g. &quot;2100px 900px&quot;
+
+# Number of pixels to move the parallax background per slide
+# - Calculated automatically unless specified
+# - Set to 0 to disable movement along an axis
+parallaxBackgroundHorizontal: null
+parallaxBackgroundVertical: null
+
+# The display mode that will be used to show slides
+display: 'block'
+</code></pre>
+<h2 id="customising-individual-slides">Customising individual slides<a class="headerlink" href="#customising-individual-slides" title="Permanent link">&para;</a></h2>
+<p>custom background image:</p>
+<pre><code class="language-markdown">---
+
+&lt;!-- .slide: data-background=&quot;https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg&quot; --&gt;
+#### testslide
+
+---
+</code></pre>
                 
               
               
